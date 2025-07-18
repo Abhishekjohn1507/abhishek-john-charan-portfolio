@@ -4,7 +4,10 @@ export default function Home() {
   return (
  <div>
 {/* <Navbar/> */}
-<Hero/>
+
+
+<Hero/> 
+
  </div>
   );
 }
