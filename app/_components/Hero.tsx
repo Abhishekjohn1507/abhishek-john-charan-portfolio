@@ -1,7 +1,6 @@
 import { cn } from '@/lib/utils'
 import Image from 'next/image'
 import React from 'react'
-import Navbar from './Navbar'
 import { TextGenerateEffect } from '@/components/ui/text-generate-effect'
 const words = `A Web Dev & Cloud Practitioner`;
 function Hero() {
