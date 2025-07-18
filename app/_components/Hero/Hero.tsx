@@ -43,7 +43,7 @@ function Hero() {
             alt='img'
             width={170}
             height={170}
-            className='absolute left-5 top-6 w-48 h-65 sm:w-[400px] sm:h-[600px] rounded-3xl  z-30'
+            className='absolute left-5 top-6 w-48 h-65 sm:w-[400px] sm:h-[600px] rounded-3xl  z-30 animate-collapsible-up'
           />
         </div>
         <div className="flex flex-col items-center sm:items-start text-center sm:text-left col-start-1 row-start-2 sm:col-start-auto sm:row-start-auto">

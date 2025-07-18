@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import Navbar from "./_components/Navbar";
 import { ThemeProvider } from "@/components/ui/theme-provider";
 
 
@@ -24,7 +23,7 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <body
    
-        className={`${inter.className}antialiased`}
+        className={`${inter.className}antialiased bg-black` }
       >  <ThemeProvider
       attribute="class"
       defaultTheme="system"
@@ -32,7 +31,6 @@ export default function RootLayout({
       disableTransitionOnChange
     >
 
-           <Navbar/>
            
         {children}
         </ThemeProvider>
