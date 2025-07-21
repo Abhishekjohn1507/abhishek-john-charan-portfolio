@@ -1,4 +1,3 @@
-import { h2 } from 'motion/react-client';
 import React from 'react'
 
 type Props = {

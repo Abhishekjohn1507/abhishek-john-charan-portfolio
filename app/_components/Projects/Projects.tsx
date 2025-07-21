@@ -1,10 +1,7 @@
 import React from 'react'
-import SectionContainer from '../Section/SectionContainer'
 import SectionHeader from '../Section/SectionHeader'
 import { projects } from '@/data/projectsData'
 import Project from './Project'
-import { GridBackgroundDemo } from '@/components/ui/grid-background'
-
 
 
 const Projects = () => {

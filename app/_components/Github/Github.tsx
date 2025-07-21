@@ -50,8 +50,12 @@ const Github = () => {
           commitsObj[repo.name] = commitsArr[idx];
         });
         setCommits(commitsObj);
-      } catch (err: any) {
-        setError(err.message || 'Error fetching GitHub data');
+      } catch (err) {
+        if (err instanceof Error) {
+          setError(err.message);
+        } else {
+          setError('Error fetching GitHub data');
+        }
       } finally {
         setLoading(false);
       }

@@ -5,9 +5,7 @@ import { experience } from '@/data/experiences'
 import Experience from './Experience'
 import Image from 'next/image'
 
-type Props = {}
-
-const Experiences = (props: Props) => {
+const Experiences = () => {
   return (
     <SectionContainer id='experiences'>
       <div className='section-contents mb-16 md:mb-11 relative'>

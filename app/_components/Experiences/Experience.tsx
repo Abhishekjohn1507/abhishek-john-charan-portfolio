@@ -10,7 +10,7 @@ type Props = {
     description:string;
 }
 
-const Experience = ({id,image,role,date,description,company}:Props) => {
+const Experience = ({image,role,date,description,company}:Props) => {
   return (
     <div className='card flex flex-col items-stretch w-full max-w-screen-lg px-6 py-7 md:px-8 gap-3'>
         <div className='flex justify-between items-start'>
