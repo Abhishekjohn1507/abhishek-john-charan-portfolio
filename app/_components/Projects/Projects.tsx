@@ -9,15 +9,12 @@ import { GridBackgroundDemo } from '@/components/ui/grid-background'
 
 const Projects = () => {
   return (
-    <SectionContainer id='projects'>
-      <div className='section-contents mx-6 md:mx-16 '>
-        <SectionHeader plainText="😎 Some of my" highlightText='Best Works' />
-        <div className=' grid grid-cols-1 lg:grid-cols-2 gap-10 mx-5 md:w-5xl 
-        '>
-         
-          {projects.map((project, id) => (
+    <section id="projects" className="py-20 px-4 sm:px-6 lg:px-8">
+      <SectionHeader plainText="My" highlightText="Projects" />
+      <div className="mt-12 grid gap-8 px-3 sm:grid-cols-2 lg:grid-cols-3 sm:px-20">
+        {projects.map((project, index) => (
             <Project
-              key={id}
+              key={index}
               thumbnail={project.thumbnail}
               title={project.title}
               link={project.link}
@@ -26,8 +23,7 @@ const Projects = () => {
             />
           ))}
         </div>
-      </div>
-    </SectionContainer>
+      </section>
   )
 }
 

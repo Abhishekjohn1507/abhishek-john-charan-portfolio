@@ -22,8 +22,24 @@ const menuTab = [
         id: 'projects'
     },
     {
+        name: 'Experiences',
+        link: '#experiences', // <-- Use hash for in-page navigation
+        id: 'experiences'
+    },
+    
+    {
+        name: 'Testimonials',
+        link: '#testimonials',
+        id: 'testimonials'
+    },
+    {
+        name: 'Code',
+        link: '#github',
+        id: 'code'
+    },
+    {
         name: 'Contact',
-        link: '/',
+        link: '#contact',
         id: 'contact'
     },
 ];

@@ -6,8 +6,9 @@ import TopBackground from './TopBackground';
 const words = `I'm very curious for learning new technologies`;
 function Hero() {
   return (
-    <div className="relative w-full bg-white dark:bg-black py-8 sm:py-0">
+    <section id="home" className='relative flex flex-col items-center justify-center min-h-screen text-white overflow-hidden'>
       <TopBackground />
+      <div className='absolute inset-0 bg-black opacity-50'></div>
       <div
         className={cn(
           "absolute inset-0",
@@ -59,7 +60,7 @@ function Hero() {
           <TextGenerateEffect words={words} />
         </div>
       </div>
-    </div>
+    </section>
   )
 }
 
