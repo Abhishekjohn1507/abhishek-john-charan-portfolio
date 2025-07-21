@@ -5,25 +5,28 @@ import Link from 'next/link'
 import React, { useState } from 'react'
 
 
-const menuTab=[
+const menuTab = [
     {
-        name:'Home',
-        link:'/'
+        name: 'Home',
+        link: '#home',
+        id: 'home'
     },
     {
-        name:'Blog',
-        link:'/'
-    }, 
-     {
-        name:'Projects',
-        link:'/'
+        name: 'Blog',
+        link: '/',
+        id: 'blog'
     },
     {
-        name:'Contact',
-        link:'/'
+        name: 'Projects',
+        link: '#projects', // <-- Use hash for in-page navigation
+        id: 'projects'
     },
-
-]
+    {
+        name: 'Contact',
+        link: '/',
+        id: 'contact'
+    },
+];
 
 function Navbar() {
     const [menuOpen, setMenuOpen] = useState(false);

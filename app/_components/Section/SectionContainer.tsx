@@ -6,7 +6,7 @@ type Props = React.PropsWithChildren<{
 
 const SectionContainer = ({children,id}: Props) => {
   return (
-<section id={id} className='w-full relative flex justify-center z-30'>{children}</section>
+<section id={id} className='w-full mt-10 relative flex justify-center z-30'>{children}</section>
 )
 }
 
